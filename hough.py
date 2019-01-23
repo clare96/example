@@ -3,7 +3,7 @@ import numpy as np
 
 
 # 1.模板匹配
-img = cv2.imread('shape.jpeg')
+img = cv2.imread('shape.jpg')
 drawing = np.zeros(img.shape[:], dtype=np.uint8)  # 创建画板
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray, 50, 150)
